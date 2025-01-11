@@ -7,3 +7,20 @@ const REVIEWS = [
     "Loved the hearty texture and rich taste - a new family favorite!",
     "Quick, flavorful, and satisfying - this chili hits all the right notes!"
 ]
+
+
+function updateServingNum(){
+    let servingNum = document.getElementById("num-servings").value;
+    let rows = document.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+    for (let i = 0; i < rows.length; i++){
+        rows[i].getElementsByTagName("th")[0].innerText = BASE_AMNS[i] * parseInt(servingNum);
+    }
+}
+
+let reviewNum = 0;
+
+function displayReview(){
+    alert(REVIEWS[reviewNum]);
+    reviewNum = (reviewNum + 1) % REVIEWS.length;
+}

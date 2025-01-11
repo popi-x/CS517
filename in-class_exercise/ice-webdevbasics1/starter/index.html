@@ -39,7 +39,7 @@
 			</tbody>
 		</table>
 		<label for="num-servings">Number of Servings</label>
-		<select id="num-servings">
+		<select id="num-servings" onchange="updateServingNum()">
 			<option>1</option>
 			<option>2</option>
 			<option>3</option>
@@ -49,6 +49,6 @@
 			<li>Cook</li>
 			<li>Simmer</li>
 		</ol>
-		<button>Display Review</button>
+		<button onclick="displayReview()">Display Review</button>
 	</body>
 </html>
