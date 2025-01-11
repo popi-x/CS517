@@ -1,1 +1,4 @@
 /* This is where your CSS goes! */
+table, td, th {
+    border: 1px dotted;
+}
