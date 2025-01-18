@@ -14,7 +14,7 @@ function updateServingNum(){
     let rows = document.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
 
     for (let i = 0; i < rows.length; i++){
-        rows[i].getElementsByTagName("th")[0].innerText = BASE_AMNS[i] * parseInt(servingNum);
+        rows[i].getElementsByTagName("td")[0].innerText = BASE_AMNS[i] * parseInt(servingNum);
     }
 }
 
